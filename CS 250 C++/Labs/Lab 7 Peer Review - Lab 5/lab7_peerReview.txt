@@ -1,0 +1,70 @@
+Programmers: Li, Gellert & Wegener, Brian
+
+Testers: Banh, Alex
+
+Comments:
+Name Header: Name Header is present and in the correct format
+
+Fuction print:  Correct fuction header
+
+		Uses a WHILE loop and stops when a nullptr is encountered
+
+Fuction reversePrint: Correct fuction header
+
+		      Uses a while loop and traverses the linklist in reverse
+		      Stops when a nullptr is encountered
+
+Fuction front:  Correct fuction header
+
+		One line statement that returns the first value
+
+Fuction back:   Correct fuciton header
+
+		One line statement that returns the first value
+
+Fuction copyToList: Correct fuction header
+
+		    Identifier is not descrpitive, it does not 
+		    state that there is more than one list
+
+		    Copies the fuction from the last element 
+		    in the list and uses a while loop to 
+		    traverse the linklist
+
+Fuction insertInOrder:  Incorrect header (uses const int instead of just int)
+			Has a condition for empty list
+
+			There should be a sequence of IF/ELSE statements, 
+			rather than a sequence of IF/ ELSE IF statements.
+
+			The case when the list is empty was considered.
+
+			The case when the new node should be inserted to
+			the left of the first node was considered but doesn't 
+			set the newNode to point to the previous last element
+
+			The case when the new node should be inserted somewhere
+			in the middle or the end was considered but uses 3 different
+			pointers to go through the list and does not use all the 
+			pointers in each of his if and else if statements in his while
+			loop even though two of three of the pointers where 
+			declared beforehand (-1)
+			
+			Variable count increases everytime the 
+			the insertToOrder fuction is called 
+			instead of only when there is new data (-1)
+
+			
+Other errors: 	Variables are not declated right before using them
+		(begin pointer for if(begin->getData() > element) )
+		(end pointer for if(end->getData() < element) ) (-1)
+
+		Poor indentation in the insertToOrder fuction (-1)
+
+Other:  Incorrect Count for all the test (-1)
+
+	Incorrect Print backwards output for Insert 7 amd Insert 5
+	(Loses the second to last Node) (-1)
+
+	Created too many unnessarary pointers in the insertToOrder fuction 
+	(3 different pointers: begin, end, and newNode)
